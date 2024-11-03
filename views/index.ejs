@@ -1,0 +1,95 @@
+<% include Partials/header.ejs %>
+<% include Partials/main_nav.ejs %>
+<!--Style-->
+<style>
+  body{
+    font-family: 'Comic Neue', sans-serif;
+  }
+  h1 {
+    font-weight: 700;
+  }
+  .navbar {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+</style>
+
+<!--Home Section-->
+<div class="title">
+  <h1>Hi<br>I'm <span><%= title %></span></h1>
+</div>
+
+
+<!--About Section-->
+<section id=about class="about">
+  <h1>
+    About
+  </h1>
+  <div class="about-box">
+    <p>Hi there! I'm Chloe Hoang, an 18-year-old undergraduate at Ontario Tech University, where I'm
+      specializing in Networking and IT Security. My fascination with technology drives me to explore
+      the complexities of cybersecurity and digital infrastructure, aiming to pave the way for a safer
+      online world. When I'm not immersed in my studies, you'll find me on the badminton court, representing
+      Canada as an international player. Balancing my love for sports and technology keeps my life dynamic
+      and fulfilling.</p>
+  </div>
+</section>
+
+
+<!--Project Section-->
+<section id="project" class="project">
+  <h1>
+    Projects
+  </h1>
+</section>
+
+
+<!--Contact Section-->
+<section id="contact" class="contact">
+  <h1>
+      Contact
+  </h1>
+  <h5>Feel free to contact me with any inquiries or questions!</h5>
+  <div class="info">
+      <!-- Phone Information -->
+      <div class="phone">
+          <i class="fa-solid fa-phone"></i>
+          <p>+1 416-844-6515</p>
+      </div>
+      <!-- Email Information -->
+      <div class="email">
+          <i class="fa-regular fa-envelope"></i>
+          <p>chloe.hoang1@ontariotechu.net</p>
+      </div>
+      <!-- Address Location -->
+      <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>2000 Simcoe St N, Oshawa, ON L1G 0C5</p>
+      </div>
+  </div>
+  <!-- Contact Form -->
+  <form action="https://api.web3forms.com/submit" method="POST" class="contactItems">
+      <input type="hidden" name="access_key" value="bde1ed56-a442-44f6-8bcd-321c03d6f7bf">
+
+      <!-- Name Input -->
+      <input type="text" id="name" name="name" placeholder="Your Name" class="contactInfo" required>
+
+      <!-- Email Input -->
+      <input type="email" id="email" name="email" placeholder="Your Email" class="contactInfo" required>
+
+      <!-- Message Input -->
+      <textarea id="message" name="message" placeholder="Your Message" class="contactInfo"
+          required></textarea>
+
+      <div class="buttonContainer">
+          <!-- Reset Button -->
+          <button type="reset">Reset</button>
+          <!-- Submit Button -->
+          <button type="submit">Submit</button>
+      </div>
+  </form>
+</section>
+<% include Partials/footer.ejs %>
+
+    

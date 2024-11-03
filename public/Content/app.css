@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html, body {
+  font-family:'Comic Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding-top: 80px;
+  scroll-margin-top: 60px;
+}
+
+
+/* Nav Bar */
+.nav-item, .navbar-brand {
+  margin: 0 10px;
+  padding: 5px;
+}
+
+
+/* Home Page */
+.title {
+  display: grid;
+  place-items: center;
+  height: 80vh;
+}
+
+.title h1 {
+  font-size: 600%;
+  margin-top: 100px;
+}
+
+.title span {
+  color: lightblue;
+}
+
+
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 20px 40px;
+}
+
+.about h1 {
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.about-box {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  font-size: 110%;
+  line-height: 1.8;
+}
+
+
+/* Project Section */
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 20px 40px;
+}
+
+.project h1 {
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px 40px;
+  margin: 0;
+}
+
+.contact h1 {
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.contact h5 {
+  margin-bottom: 25px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.01;
+}
+
+.phone p, 
+.email p {
+  margin-top: 20px;
+}
+
+.location p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Comic Neue", sans-serif;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contactInfo {
+  padding: 7px;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  font-family: "Comic Neue", sans-serif;
+  font-size: 10px;
+  width: 100%;
+}
+
+.contact .contactInfo::placeholder {
+  font-family: "Comic Neue", sans-serif;
+  font-size: 10px;
+  color: grey;
+}
+
+.contact .contactInfo:focus,
+.contact .contactInfo:active {
+  outline: none;
+  border: 2px solid lightblue;
+  color: grey;
+}
+
+.contactInfo#message {
+  height: 100px;
+  padding: 10px 10px;
+}
+
+.contact .buttonContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.contact .contactItems button {
+  padding: 10px 15px;
+  font-family: "Comic Neue", sans-serif;
+  font-size: 10px;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  background: radial-gradient(circle, rgb(221, 243, 251), lightblue);
+  transition: background 1s ease;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.contact .contactItems button:hover {
+  opacity: 1;
+  background: lightblue;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer .navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links a {
+  color: grey;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.links i:hover {
+  transform: scale(1.2);
+}
+
+footer .navbar-text {
+  margin: 0;
+}
