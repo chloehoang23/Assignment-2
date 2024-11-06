@@ -1,0 +1,41 @@
+<% include Partials/header.ejs %>
+<% include Partials/main_nav.ejs %>
+<!--Style-->
+<style>
+    body{
+      font-family: 'Comic Neue', sans-serif;
+    }
+    h1 {
+      font-weight: 700;
+    }
+    .navbar {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    }
+</style>
+<!--About Section-->
+<section id="about" class="about">
+  <h1>
+    <%= title %>
+  </h1>
+  <div class="partners">
+    <div class="partner">
+      <img src="/Assets/images/img.png" alt="Chloe">
+      <p>Hi there! I'm Chloe Hoang, an 18-year-old undergraduate at Ontario Tech University, where I'm
+            specializing in Networking and IT Security. My fascination with technology drives me to explore
+            the complexities of cybersecurity and digital infrastructure, aiming to pave the way for a safer
+            online world. When I'm not immersed in my studies, you'll find me on the badminton court, representing
+            Canada as an international player. Balancing my love for sports and technology keeps my life dynamic
+            and fulfilling. </p>
+    </div>
+    <div class="partner">
+      <img src="/Assets/images/img1.jpg" alt="Josh">
+      <p>Hello, I'm Joshua Nguyen, a second year student at Ontario Tech University in Web and Script 3120U. I'm 19 years old, 
+              and I'm in Networking and IT security. I'm also an aspiring badminton player and I've been playing since the age of 5.
+            </p>
+    </div>
+  </div>
+</section>
+  <% include Partials/footer.ejs %>
+  
